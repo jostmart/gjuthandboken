@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Det gick inte att hitta resursen.</title>
+        <meta name="viewport" content="width=device-width" />
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Consolas","Lucida Console",Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+         @media screen and (max-width: 639px) {
+          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Serverfel i tillämpningsprogrammet /.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Det gick inte att hitta resursen.</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Beskrivning: </b>HTTP 404. Resursen som du letar efter (eller ett av resursens beroenden) kan ha tagits bort, namnet kan ha &#228;ndrats, eller ocks&#229; &#228;r den inte tillg&#228;nglig f&#246;r tillf&#228;llet. Kontrollera att stavningen i URL:n nedan &#228;r korrekt.
+            <br><br>
+
+            <b> Begärd URL: </b>/handboken/21-gjuteriindustrins-energifraagor/&quot; + item.url + &quot;<br><br>
+
+            <hr width=100% size=1 color=silver>
+
+            <b>Versionsinformation:</b>&nbsp;Microsoft .NET Framework-version:4.0.30319; ASP.NET-version:4.7.3190.0
+
+            </font>
+
+    </body>
+</html>
+<!-- 
+[ArgumentException]: Ogiltiga tecken i s&#246;kv&#228;gen.
+   vid System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   vid System.IO.Path.GetExtension(String path)
+   vid Umbraco.Core.UriExtensions.<>c__DisplayClass1.<IsClientSideRequest>b__0(String x)
+   vid System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   vid Umbraco.Core.UriExtensions.IsClientSideRequest(Uri url)
+   vid Umbraco.Core.Profiling.WebProfiler.UmbracoApplicationEndRequest(Object sender, EventArgs e)
+   vid System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   vid System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   vid System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--><!-- 
+Detta felmeddelande kan innehålla känslig information eftersom ASP.NET har konfigurerats för att visa fullständiga felmeddelanden med &lt;customErrors mode="Off"/&gt;. I skarpa tillämpningsprogram bör &lt;customErrors mode="On"/&gt; or &lt;customErrors mode="RemoteOnly"/&gt; användas.-->HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Date: Wed, 24 Oct 2018 08:06:09 GMT
+Content-Length: 12064
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head id="ContentPlaceHolderDefault_head"><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>
+	Gjuteriteknisk handbok | 21.2 Grundläggande begrepp
+</title><meta name="keywords" content="" /><meta name="description" content="" /><link rel="stylesheet" type="text/css" href="http://www.gjuterihandboken.se/css/print.css" /></head>
+<body onload="window.print()">
+    <div class="MainFrame">
+        <div class="TopFrame">
+            <div class="LoggaPane">
+               Utskrift från gjuterihandboken.se
+     		</div>
+         </div>
+      
+     <div class="ContentFrame">
+    	<form method="post" action="print.html" id="RunwayMasterForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUENTM4MWRkjHmz9jwuvg8sg4rQRX4MUqR9xdKbfFo6HIUzndWElvs=" />
+</div>
+
+            <div class="ContentPane">
+      			<h1>21.2 Grundläggande begrepp</h1>
+      			<p>För att lära mer hänvisas exempelvis till <a href="http://www.energikunskap.se/sv/FAKTABASEN/" target="_blank">Energimyndighetens hemsida om energikunskap</a> samt <a href="http://energihandbok.se/" target="_blank">Jernkontorets energihandbok</a>.</p>
+<p>Här nedan finns även en onlinepresentation som är bra att titta igenom. Presentationen är utvecklad inom av Energikontoret Skåne inom projektet PROEFF.</p>
+<p><iframe src="http://prezi.com/embed/eqtr3mvgu9cv/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;token=undefined&amp;disabled_features=undefined" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0" height="400" width="750"></iframe></p>
+<p> </p>
+<h2>Enheter och prefix</h2>
+<p>Grundenheten för energi är Joule, [J].</p>
+<p>Wattimme (ofta förkortat Wh) är en energienhet som definieras som en effekt på en watt under en timme och motsvarar alltså 3600 wattsekunder = 3600 joule. Joule är SI-enheten för energi. Wattimme är en sammansatt enhet som med enhetssymboler uttrycks Wh. <br /> 1000 Wh blir därmed 1kWh (kilowattimme). 1 kWh=3600 kJ.</p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="318" valign="top">
+<p><strong>Benämning</strong></p>
+</td>
+<td width="318" valign="top">
+<p><strong>Talfaktor</strong></p>
+</td>
+</tr>
+<tr>
+<td width="318" valign="top">
+<p>kilo [k]</p>
+</td>
+<td width="318" valign="top">
+<p>10<sup>3</sup> =1 000</p>
+</td>
+</tr>
+<tr>
+<td width="318" valign="top">
+<p>mega [M]</p>
+</td>
+<td width="318" valign="top">
+<p>10<sup>6</sup> =1 000 000</p>
+</td>
+</tr>
+<tr>
+<td width="318" valign="top">
+<p>giga [G]</p>
+</td>
+<td width="318" valign="top">
+<p>10<sup>9</sup> =1 000 000 000</p>
+</td>
+</tr>
+<tr>
+<td width="318" valign="top">
+<p>tera [T]</p>
+</td>
+<td width="318" valign="top">
+<p>10<sup>12</sup> =1 000 000 000 000</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2>Bränsledata</h2>
+<p>I tabellen nedan finns det vanligaste bränslena sammanställda med värmevärde och energiinnehåll. Tabellerna kommer från Gunnar Hellsten och Sten-Erik Mörstedt.</p>
+<p><em>Tabell: Fasta bränslen</em></p>
+<table border="1" cellspacing="0" cellpadding="0" style="width: 621px;">
+<tbody>
+<tr>
+<td width="124" valign="top">
+<p> </p>
+</td>
+<td width="207" valign="top">
+<p align="center">Effektivt värmevärde</p>
+</td>
+<td width="183" valign="top">
+<p align="center">Energiinnehåll</p>
+</td>
+<td width="108" valign="top"> </td>
+</tr>
+<tr>
+<td width="124" valign="top">
+<p> </p>
+</td>
+<td width="207" valign="top">
+<p align="center"> MJ/kg</p>
+</td>
+<td width="183" valign="top">
+<p align="center">MWh/ton</p>
+</td>
+<td width="108" valign="top">
+<p>Fukthalt (%)</p>
+</td>
+</tr>
+<tr>
+<td width="124" valign="top">
+<p>Grot</p>
+</td>
+<td width="207" valign="top">
+<p align="center">9,5</p>
+</td>
+<td width="183" valign="top">
+<p align="center">2,6</p>
+</td>
+<td width="108" valign="top">
+<p align="center">45</p>
+</td>
+</tr>
+<tr>
+<td width="124" valign="top">
+<p>Torrflis</p>
+</td>
+<td width="207" valign="top">
+<p align="center">16,6</p>
+</td>
+<td width="183" valign="top">
+<p align="center">4,6</p>
+</td>
+<td width="108" valign="top">
+<p align="center">12</p>
+</td>
+</tr>
+<tr>
+<td width="124" valign="top">
+<p>Barkflis</p>
+</td>
+<td width="207" valign="top">
+<p align="center">7,3</p>
+</td>
+<td width="183" valign="top">
+<p align="center">2,0</p>
+</td>
+<td width="108" valign="top">
+<p align="center">55</p>
+</td>
+</tr>
+<tr>
+<td width="124" valign="top">
+<p>Pellet (trä)</p>
+</td>
+<td width="207" valign="top">
+<p align="center">16,8</p>
+</td>
+<td width="183" valign="top">
+<p align="center">4,7</p>
+</td>
+<td width="108" valign="top">
+<p align="center">11</p>
+</td>
+</tr>
+<tr>
+<td width="124" valign="top">
+<p>Briketter (trä)</p>
+</td>
+<td width="207" valign="top">
+<p align="center">16,8</p>
+</td>
+<td width="183" valign="top">
+<p align="center">4,7</p>
+</td>
+<td width="108" valign="top">
+<p align="center">11</p>
+</td>
+</tr>
+<tr>
+<td width="124" valign="top">
+<p>Träpulver</p>
+</td>
+<td width="207" valign="top">
+<p align="center">17,7</p>
+</td>
+<td width="183" valign="top">
+<p align="center">4,9</p>
+</td>
+<td width="108" valign="top">
+<p align="center">7</p>
+</td>
+</tr>
+<tr>
+<td width="124" valign="top">
+<p>Stenkol</p>
+</td>
+<td width="207" valign="top">
+<p align="center">33,6</p>
+</td>
+<td width="183" valign="top">
+<p align="center">9,3</p>
+</td>
+<td width="108" valign="top"> </td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><em>Tabell: Gasformiga bränslen</em></p>
+<table border="1" cellspacing="0" cellpadding="0" style="width: 502px;">
+<tbody>
+<tr>
+<td width="181" valign="top">
+<p> </p>
+</td>
+<td colspan="2" width="165" valign="top">
+<p align="center">Effektivt värmevärde</p>
+</td>
+<td colspan="2" width="156" valign="top">
+<p align="center">Energiinnehåll</p>
+</td>
+</tr>
+<tr>
+<td width="181" valign="top">
+<p> </p>
+</td>
+<td width="82" valign="top">
+<p align="center">MJ/kg</p>
+</td>
+<td width="84" valign="top">
+<p align="center">MJ/m<sup>3</sup></p>
+</td>
+<td width="81" valign="top">
+<p align="center">MWh/ton</p>
+</td>
+<td width="75" valign="top">
+<p align="center">MWh/m<sup>3</sup></p>
+</td>
+</tr>
+<tr>
+<td width="181" valign="top">
+<p>Väte</p>
+</td>
+<td width="82" valign="top">
+<p align="center">120</p>
+</td>
+<td width="84" valign="top">
+<p align="center">10,6</p>
+</td>
+<td width="81" valign="top">
+<p align="center">33,3</p>
+</td>
+<td width="75" valign="top">
+<p align="center">3,0</p>
+</td>
+</tr>
+<tr>
+<td width="181" valign="top">
+<p>Metan (även biometan)</p>
+</td>
+<td width="82" valign="top">
+<p align="center">50</p>
+</td>
+<td width="84" valign="top">
+<p align="center">35,3</p>
+</td>
+<td width="81" valign="top">
+<p align="center">13,9</p>
+</td>
+<td width="75" valign="top">
+<p align="center">9,8</p>
+</td>
+</tr>
+<tr>
+<td width="181" valign="top">
+<p>Etan</p>
+</td>
+<td width="82" valign="top">
+<p align="center">47,6</p>
+</td>
+<td width="84" valign="top">
+<p align="center">63,5</p>
+</td>
+<td width="81" valign="top">
+<p align="center">13,2</p>
+</td>
+<td width="75" valign="top">
+<p align="center">17,6</p>
+</td>
+</tr>
+<tr>
+<td width="181" valign="top">
+<p>Propen</p>
+</td>
+<td width="82" valign="top">
+<p align="center">47,8</p>
+</td>
+<td width="84" valign="top">
+<p align="center">88,5</p>
+</td>
+<td width="81" valign="top">
+<p align="center">13,3</p>
+</td>
+<td width="75" valign="top">
+<p align="center">24,6</p>
+</td>
+</tr>
+<tr>
+<td width="181" valign="top">
+<p>Propan</p>
+</td>
+<td width="82" valign="top">
+<p align="center">46,3</p>
+</td>
+<td width="84" valign="top">
+<p align="center">90,0</p>
+</td>
+<td width="81" valign="top">
+<p align="center">12,9</p>
+</td>
+<td width="75" valign="top">
+<p align="center">25,0</p>
+</td>
+</tr>
+<tr>
+<td width="181" valign="top">
+<p>Butan</p>
+</td>
+<td width="82" valign="top">
+<p align="center">45,8</p>
+</td>
+<td width="84" valign="top">
+<p align="center">117,0</p>
+</td>
+<td width="81" valign="top">
+<p align="center">12,7</p>
+</td>
+<td width="75" valign="top">
+<p align="center">32,5</p>
+</td>
+</tr>
+<tr>
+<td width="181" valign="top">
+<p>Koksugns-gas</p>
+</td>
+<td width="82" valign="top">
+<p align="center">n/a</p>
+</td>
+<td width="84" valign="top">
+<p align="center">18,9</p>
+</td>
+<td width="81" valign="top">
+<p align="center">n/a</p>
+</td>
+<td width="75" valign="top">
+<p align="center">5,3</p>
+</td>
+</tr>
+<tr>
+<td width="181" valign="top">
+<p>Gasol- propanbas</p>
+</td>
+<td width="82" valign="top">
+<p align="center">46,3</p>
+</td>
+<td width="84" valign="top">
+<p align="center">88,4</p>
+</td>
+<td width="81" valign="top">
+<p align="center">12,9</p>
+</td>
+<td width="75" valign="top">
+<p align="center">24,6</p>
+</td>
+</tr>
+<tr>
+<td width="181" valign="top">
+<p>Gasol -butanbas</p>
+</td>
+<td width="82" valign="top">
+<p align="center">46,1</p>
+</td>
+<td width="84" valign="top">
+<p align="center">115,3</p>
+</td>
+<td width="81" valign="top">
+<p align="center">12,8</p>
+</td>
+<td width="75" valign="top">
+<p align="center">32,0</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><em> Tabell: Flytande bränslen</em></p>
+<table border="1" cellspacing="0" cellpadding="0" style="width: 506px; height: 149px;">
+<tbody>
+<tr>
+<td width="196" valign="top"> </td>
+<td width="167" valign="top">
+<p align="center">Effektivt värmevärde</p>
+</td>
+<td width="143" valign="top">
+<p align="center">Energiinnehåll</p>
+</td>
+</tr>
+<tr>
+<td width="196" valign="top">
+<p>Flytande bränslen</p>
+</td>
+<td width="167" valign="top">
+<p align="center">MJ/kg</p>
+</td>
+<td width="143" valign="top">
+<p align="center">MWh/ton</p>
+</td>
+</tr>
+<tr>
+<td width="196" valign="top">
+<p>Metanol</p>
+</td>
+<td width="167" valign="top">
+<p align="center">19,8</p>
+</td>
+<td width="143" valign="top">
+<p align="center">5,5</p>
+</td>
+</tr>
+<tr>
+<td width="196" valign="top">
+<p>Etanol</p>
+</td>
+<td width="167" valign="top">
+<p align="center">27,1</p>
+</td>
+<td width="143" valign="top">
+<p align="center">7,5</p>
+</td>
+</tr>
+<tr>
+<td width="196" valign="top">
+<p>Bensen</p>
+</td>
+<td width="167" valign="top">
+<p align="center">40,3</p>
+</td>
+<td width="143" valign="top">
+<p align="center">11,2</p>
+</td>
+</tr>
+<tr>
+<td width="196" valign="top">
+<p>Eldningsolja</p>
+</td>
+<td width="167" valign="top">
+<p align="center">41,6</p>
+</td>
+<td width="143" valign="top">
+<p align="center">11,6</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2>Energibärare</h2>
+<p>Definition: ett ämne (tillstånd) som kan användas för att lagra, flytta energi. Energi behöver oftast förfinas och transporteras innan användning. Detta görs med energibärare, vilket i vardagligt tal innebär primärenergi som i någon form blivit uppgraderad för att kunna nyttjas i ett senare skede. Exempel:</p>
+<ul>
+<li>Bränslen</li>
+<li>El</li>
+<li>Ånga</li>
+<li>Hetvatten, fjärrvärme</li>
+<li>Köldbärare</li>
+<li>Tryckluft</li>
+</ul>
+<p>I samband med att energi omvandlas från en form till en annan, går en del energi förlorad (ofta för att den omvandlas till värme som vi inte kan ta vara på), och vi kallar förhållandet mellan det man får ut från det man stoppar in för verkningsgrad. Exempel på omvandlingsverkningsgrader:</p>
+<p>Vattenturbin: potentiell &gt; kinetisk &gt; mekanisk &gt; elektrisk ~90%</p>
+<p>Elektrisk motor: elektrisk &gt; mekanisk &gt;90%</p>
+<p>Kraftverk: kemisk &gt; termisk &gt; mekanisk &gt; elektrisk ~40%</p>
+<p> </p>
+            </div>
+      	
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div></form>
+      </div>
+   </div>
+</body>
+</html> 

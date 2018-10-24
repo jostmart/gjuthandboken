@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Det gick inte att hitta resursen.</title>
+        <meta name="viewport" content="width=device-width" />
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Consolas","Lucida Console",Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+         @media screen and (max-width: 639px) {
+          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Serverfel i tillämpningsprogrammet /.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Det gick inte att hitta resursen.</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Beskrivning: </b>HTTP 404. Resursen som du letar efter (eller ett av resursens beroenden) kan ha tagits bort, namnet kan ha &#228;ndrats, eller ocks&#229; &#228;r den inte tillg&#228;nglig f&#246;r tillf&#228;llet. Kontrollera att stavningen i URL:n nedan &#228;r korrekt.
+            <br><br>
+
+            <b> Begärd URL: </b>/handboken/7-gjutsimulering/&quot; + item.url + &quot;<br><br>
+
+            <hr width=100% size=1 color=silver>
+
+            <b>Versionsinformation:</b>&nbsp;Microsoft .NET Framework-version:4.0.30319; ASP.NET-version:4.7.3190.0
+
+            </font>
+
+    </body>
+</html>
+<!-- 
+[ArgumentException]: Ogiltiga tecken i s&#246;kv&#228;gen.
+   vid System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   vid System.IO.Path.GetExtension(String path)
+   vid Umbraco.Core.UriExtensions.<>c__DisplayClass1.<IsClientSideRequest>b__0(String x)
+   vid System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   vid Umbraco.Core.UriExtensions.IsClientSideRequest(Uri url)
+   vid Umbraco.Core.Profiling.WebProfiler.UmbracoApplicationEndRequest(Object sender, EventArgs e)
+   vid System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   vid System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   vid System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--><!-- 
+Detta felmeddelande kan innehålla känslig information eftersom ASP.NET har konfigurerats för att visa fullständiga felmeddelanden med &lt;customErrors mode="Off"/&gt;. I skarpa tillämpningsprogram bör &lt;customErrors mode="On"/&gt; or &lt;customErrors mode="RemoteOnly"/&gt; användas.-->HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Date: Wed, 24 Oct 2018 07:19:56 GMT
+Content-Length: 5077
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head id="ContentPlaceHolderDefault_head"><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>
+	Gjuteriteknisk handbok | 7.2 Mesh - beräkningsnätet
+</title><meta name="keywords" content="" /><meta name="description" content="" /><link rel="stylesheet" type="text/css" href="http://www.gjuterihandboken.se/css/print.css" /></head>
+<body onload="window.print()">
+    <div class="MainFrame">
+        <div class="TopFrame">
+            <div class="LoggaPane">
+               Utskrift från gjuterihandboken.se
+     		</div>
+         </div>
+      
+     <div class="ContentFrame">
+    	<form method="post" action="print.html" id="RunwayMasterForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUENTM4MWRkjHmz9jwuvg8sg4rQRX4MUqR9xdKbfFo6HIUzndWElvs=" />
+</div>
+
+            <div class="ContentPane">
+      			<h1>7.2 Mesh - beräkningsnätet</h1>
+      			<p>Dessa metoder har sina för- och nackdelar, och det är upp till användaren att bestämma vad som lämpar sig bäst. Både FDM och FEM är numeriska approximationer för att skapa vissa beräkningsbara fysiska och tekniska procedurer. Dessa procedurer grundar sig på de differentialekvationer, som beskriver förloppet matematiskt, och som i det generella fallet inte är lösningsbara analytiskt. De båda metoderna bygger därmed på samma princip som innebär att geometrin som ska beräknas delas in i små element.</p>
+<p> </p>
+<h2>Finita differensmetoden (FDM)</h2>
+<p>Detta är den mest använda metoden då det är en robust och relativt ”enkel” metod att använda för beräkning. Detta är en följd av att man i många fall enbart använder kubiska element. Man kan även använda rektangulära element och man kan även ha olika storlekar på elementen. Detta förlänger beräkningstiden avsevärt och komplicerar beräkningen. Nackdelar med metoden är att det krävs enorma mängder element för att beskriva en komplicerad gjutgodsdetalj, men även med en fin indelning så är mesh en approximation och man får en trappstegsliknande beskrivning av en kurvatur. FDM har för stora begränsningar för att vara en metod för framtiden</p>
+<p> </p>
+<h2>Finita elementmetoden (FEM)</h2>
+<p>FEM är en mycket välkänd metod som till stor del används för mekaniska beräkningar men den används även för gjutsimulering. FEM beskriver formen på detaljen mycket väl via användning av element i form av tetraeder i varierande storlek som kan anta den form de behöver. Nackdelar med metoden är att beräkningen beroende på elementens form blir betydligt mer komplicerad och att byggandet av själva beräkningsnätet kan ta mycket lång tid. En stor fördel är möjligheten att överföra data till andra FEM-baserade mekaniska program för vidare beräkningar.</p>
+<p> </p>
+<h2>Kontrollerad volymmetoden (CVM)</h2>
+<p>Metoden kallas ibland även Volume of Fluid eller Volume of Fraction. CVM är en metod där man har försökt att kombinera det robusta i FDM med de större möjligheterna i FEM för att få en betydligt högre noggrannhet utan problem med komplicerad mesh. CVM använder kubiska element där det är möjligt men i gränsytan använder man fraktioner av element som antar den form de behöver för att beskriva detaljen noggrant.</p>
+<p>Det innebär att varje kub med CVM kan innehålla både andelar av den gjutna metallen och andelar av formmaterialet.  FDM och FEM kan däremot endast innehålla antingen den gjutna metallen eller formmaterialet. <br /> Som en följd av detta är det vid användning av CVM inte nödvändigt att dela in geometrin i en mängd små celler då geometrin beskrivs ändå</p>
+<p>CVM ger mycket korta beräkningstider med högre noggrannhet och större skalerbarhet för framtiden. Även här kan data överföras till FEM-baserade program.</p>
+<p>Figuren nedan visar hur samma trekvartscirkel kan beskrivas med olika stora celler i de tre typerna av geometribeskrivning.</p>
+<p><img width="702" height="297" src="http://www.gjuterihandboken.se/media/22334/Figur-4.jpg" alt="Beskrivning av olika former av mesh för CVM, FDM och FEM."/></p>
+<p align="center"> </p>
+<p> </p>
+<p>Beroende på vad man vill tolka med simuleringen så börjar man med stora celler för att snabbt snäva in områden där problem kan uppstå för att därefter välja ett finare nät. För simulering av restspänningar är det rekommenderat att använda mycket små celler i gränsövergången mellan form och gjutgods. Typisk cellstorlek bör vara 0,1 till 0,2 mm för att på ett bra sätt kunna beskriva randvillkoren för restspänningssimulering. Det innebär att FEM-nätet är det bästa allternativet i det läget då det är ensamt om att kunna ha varierande cellstorlekar inom samma beräkningsbox.</p>
+            </div>
+      	
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div></form>
+      </div>
+   </div>
+</body>
+</html> 

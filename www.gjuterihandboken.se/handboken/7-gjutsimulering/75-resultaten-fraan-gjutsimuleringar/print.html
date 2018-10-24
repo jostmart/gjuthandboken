@@ -1,0 +1,69 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head id="ContentPlaceHolderDefault_head"><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>
+	Gjuteriteknisk handbok | 7.5 Resultaten från gjutsimuleringar
+</title><meta name="keywords" content="" /><meta name="description" content="" /><link rel="stylesheet" type="text/css" href="http://www.gjuterihandboken.se/css/print.css" /></head>
+<body onload="window.print()">
+    <div class="MainFrame">
+        <div class="TopFrame">
+            <div class="LoggaPane">
+               Utskrift från gjuterihandboken.se
+     		</div>
+         </div>
+      
+     <div class="ContentFrame">
+    	<form method="post" action="print.html" id="RunwayMasterForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUENTM4MWRkjHmz9jwuvg8sg4rQRX4MUqR9xdKbfFo6HIUzndWElvs=" />
+</div>
+
+            <div class="ContentPane">
+      			<h1>7.5 Resultaten från gjutsimuleringar</h1>
+      			<p>Senare under beredningsarbetet används simuleringsresultatet för att justera ingjutsplaceringar och optimera behovet och placering av matare. Dock kan med fördel konstruktören använda sig av ett fullständigt simuleringsutfall till att ändra sin konstruktion så att placeringen av ingjut och matare gynnas.<br />I det följande behandlas användning av formfyllnads-, stelnings- och spänningssimulering var för sig.</p>
+<p> </p>
+<h2>Stelningssimulering</h2>
+<p>Stelningssimuleringen kan med fördel användas först för att bilda sig en uppfattning om var det uppstår problemområden där sugningar förekommer. Matare eller ingjutssystem behöver inte finnas med i simuleringen i detta läge. Simuleringen är snabb och man kan genomföra ett stort antal simuleringar på kort tid med olika inställningar somtill exempel varierande avgjutningstemperatur, även om det i fallet stelningssimulering är smältans temperatur när formen är fylld som skall antas.</p>
+<p>Stelningssimuleringen kan med fördel användas för att konstatera värsta tänkbara resultat när det kommer till förekomsten av sugningar.      </p>
+<p>Simuleringen ger bland annat den termiska modulen i given sektion hos gjutgodset vilket gör att det går att bestämma matarens storlek. Figuren nedan visar ett gjutstycke på 340 ton där hela upplägget har simulerats med avseende på den termiska modulen. Ljusare färgskala visar ökande termisk modul.</p>
+<p><img width="350"  height="327" src="http://www.gjuterihandboken.se/media/22336/Figur-6_350x327.jpg" alt="Simulering av termisk modul för ett gjutet ämne med matare."/></p>
+<p> </p>
+<p>Genom en enkel  beräkning kan storlek på matare tas fram enligt följande:</p>
+<p align="center"> </p>
+<p align="center"><strong>Modul<sub>matare</sub> &gt; 1,2 Modul</strong><sub><strong>gjutgods </strong> </sub></p>
+<p class="fotnot">Matarens höjd:diameter = 1:1                     ger d = h = 6 x Modul<sub>matare<br /></sub>Matarens höjd:diameter = 1:1,5                  ger d = 5,3 x Modul<sub>matare </sub>och h = 8 xModul<sub>matare</sub></p>
+<p> </p>
+<p>Beräkningen visar vilken matarstorlek som behövs för att mata gjutgodset och samtidigt säkerställa att mataren stelnar sist. Dock måste volymkravet, att det finns tillräcklig smälta i mataren, vara uppfyllt för att säkerställa sugningsfritt gjutgods.</p>
+<p>När simuleringen har genomförts kan man konstatera var det finns risk för sugningar, Följande figur visar ett exempel från ett pressgjutet ämne där man kan konstatera att det finns områden med risk för sugningar. Vid användning av permanenta formar (verktyg) kan resultat från stelningssimulering användas för att studera temperaturer i verktyget och därigenom kan information erhållas om dessa temperaturer är kritiska på något sätt.</p>
+<p><img width="615" height="714" src="http://www.gjuterihandboken.se/media/22337/Figur-7.jpg" alt="Pressgjutet ämne där möjliga sugningar visas som rödmarkerade områden i röntgenbilden."/></p>
+<p> </p>
+<p> </p>
+<p>Parametrar som temperatur, flytande fas- och stelningstid kan även det beräknas med stelningssimuleringen men är inte lika relevant då dessa parametrar är starkt påverkade av hur smältan transporteras in i gjutstycket.</p>
+<p> </p>
+<h2>Formfyllnads- och stelningssimulering</h2>
+<p>Formfyllnadssimulering är en betydligt mer komplex beräkning och den har minst tio gånger så lång beräkningstid för metallflöde än värmeflöde. Tekniken kallas CFD – Computational Fluid Dynamics.</p>
+<p>Med den finita differensmetoden (FDM) är det mer eller mindre så, att man slår på eller av varje element i beräkningsnätet beroende på om de är fyllda med mer eller mindre än 50 procent metall. Med mer sofistikerade metoder som Control Volume (CVM) beräknar programmet fraktioner hos elementen i beräkningsnätet och då uppnås en betydligt noggrannare simulering.</p>
+<p>När CAD-modellen av gjutgodset har kompletterats med korrekt beräknade matare och ett uppskattat beräknat ingjutssystem görs en komplett simulering med formfyllnads- och stelningssimulering i sekvens. Återigen börjas det med stora celler för att snabbt konstatera hur gjutsystemet lämpar sig för gjutgodset. Formfyllnadssimuleringen ger information om smältans vägar, vilka inlopp som påverkar mest och hur stora flöden det rinner genom varje inlopp. Det är även möjligt att simulera från vilket inlopp smältan har kommit genom att markera detta i inställningarna. Även beräknad gjuttid framgår av simuleringen.</p>
+<p><img width="749"  height="596" src="http://www.gjuterihandboken.se/media/22338/Figur-8_749x596.jpg" alt="Simulering av smältans hastighet under gjutning."/></p>
+<p> </p>
+<p>Det är nu aktuellt att konstatera om gjuttiden och smältans hastighet är inom rimligheten för att ge en bra gjutning. Här kan med fördel den brittiske professorns John Campbells tumregel om maximal hastighet på 0,5 m/s hos smältan i inloppet användas som ett gränsvärde. Figuren ovan visar en simulering där hastigheten ligger under 0,5 m/s i merparten av gjutgodset.</p>
+<p>Upptäcker man nu att gjuttiden är helt fel och/eller hastigheten är orimligt hög används med fördel Bernoullis samband angående kontinuitetsprincipen till att justera areorna hos gjutsystemet. Principen kan något förenklad skrivas som:</p>
+<p> </p>
+<p align="center">A<sub>0</sub> x V<sub>0</sub> = A<sub>1</sub> x V<sub>1</sub> = A<sub>2</sub> x V<sub>2</sub> = A<sub>n</sub> x V<sub>n</sub></p>
+<p class="fotnot">Där A = tvärsnittsarea och V = hastigheten i tvärsnittsarean.</p>
+<p> </p>
+<p>Förhållandet kan även användas till att justera sektioner hos gjutgodset om det visar sig att det uppstår hastighetsökningar under formfyllnaden.</p>
+<p><img width="750"  height="397" src="http://www.gjuterihandboken.se/media/22339/Figur-9_750x397.jpg" alt="Sektioner i gjutgodset där smältans hastighet ökar under avgjutning."/></p>
+<p> </p>
+<p>Formfyllnadssimulering ger en bild av hur formen fylls.  Simulering ger besked om huruvida flödet är turbulent, vilket leder till risk för luftinneslutningar och därmed defektbildningar. Man kan vidare få uppgift om hastigheten är så hög att risk föreligger för att formen tar skada – formerosion.</p>
+<p>Vidare kan man se vad som händer med de oxidfilmer som kan bildas under formfyllnaden. Dessutom får man mer information om de sist fyllda områdena i formen. Underlag erhålls för bedömning av om ingjutssystemet bör flyttas och om avluftning krävs och i så fall var avluftningen bör placeras.</p>
+<p>Temperaturen under formfyllnaden är en viktig parameter. Är temperaturen för låg föreligger risk för kallflytningar. Genom att betrakta hur den flytande fasen förändras under stelningen fås information om de sist stelnade områdena i ett gjutstycke, det vill säga områden där det kan finnas risk för sugningar. Simulering ger uppgifter även om eventuella sugningars storlek. Underlag erhålls vidare för att bedöma om det är något i processen som bör ändras för att uppnå ett gynnsammare stelningsförlopp.</p>
+            </div>
+      	
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div></form>
+      </div>
+   </div>
+</body>
+</html> 
